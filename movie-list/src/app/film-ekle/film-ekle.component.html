@@ -1,0 +1,19 @@
+<h2>Film Ekle</h2>
+<div class="film-ekle-form">
+  <label>Film Adı:</label>
+  <input type="text" [(ngModel)]="film.filmAdi" />
+
+  <label>Yönetmen:</label>
+  <input type="text" [(ngModel)]="film.yonetmen" />
+
+  <label>Gösterim Yılı:</label>
+  <input type="number" [(ngModel)]="film.gosterimYili" />
+
+  <label>Tür:</label>
+  <input type="text" [(ngModel)]="film.tur" />
+
+  <label>Poster URL:</label>
+  <input type="text" [(ngModel)]="film.posterURL" />
+
+  <button (click)="onSubmit()">Film Ekle</button>
+</div>

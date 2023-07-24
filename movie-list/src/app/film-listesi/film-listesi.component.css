@@ -1,0 +1,52 @@
+.film-listesi {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Kartları eşit aralıklarla hizala */
+  }
+  
+  .film-listesi .card {
+    width: calc(30% - 20px); /* Kartların yüzde genişliğini ayarlayarak aralıklar bırakın */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden; /* Kartların içeriği taşması durumunda kes */
+  }
+  
+  .film-listesi .card .card-img-top {
+    max-width: 100%;
+    max-height: 200px; /* Kart yüksekliğini ayarlayın */
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .film-listesi .card .card-body {
+    padding: 10px;
+  }
+  
+  .film-listesi .card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .film-listesi .card .card-text {
+    margin-bottom: 5px;
+  }
+  
+  .film-listesi .card .list-group-item {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    list-style: none; /* Noktaları gizle */
+  }
+  
+  .film-listesi .card .list-group-item:first-child {
+    border-top: 1px solid #ddd;
+    border-radius: 0;
+  }
+  
+  .film-listesi .card .list-group-item:last-child {
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+  }
+  

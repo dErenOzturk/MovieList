@@ -1,0 +1,21 @@
+<h2>Film Listesi</h2>
+<ul class="film-listesi">
+  <li *ngFor="let film of filmler">
+    <div class="card" style="width: 18rem">
+      <img
+        class="card-img-top"
+        [src]="film.posterURL"
+        alt="{{ film.filmAdi }}"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ film.filmAdi }}</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Yönetmen: {{ film.yonetmen }}</li>
+        <li class="list-group-item">Gösterim Yılı: {{ film.gosterimYili }}</li>
+        <li class="list-group-item">Tür: {{ film.tur }}</li>
+      </ul>
+    </div>
+  </li>
+</ul>
+    
