@@ -1,0 +1,23 @@
+<div class="buton">
+  <button (click)="aktifEt()" type="button" class="btn btn-primary">Yeni film ekle</button>
+</div>
+<div *ngIf="aktif" class="film-ekle-form">
+  <label class="film-ekle-baslik">Film Ekle</label>
+  <label>Film Adı:</label>
+  <input type="text" [(ngModel)]="filmAdi" />
+
+  <label>Yönetmen:</label>
+  <input type="text" [(ngModel)]="yonetmen" />
+
+  <label>Gösterim Yılı:</label>
+  <input type="number" [(ngModel)]="gosterimYili" />
+
+  <label>Tür:</label>
+  <input type="text" [(ngModel)]="tur" />
+
+  <label>Poster URL:</label>
+  <input type="text" [(ngModel)]="posterURL" />
+
+  <button (click)="addFilm()">Film Ekle</button>
+  <button (click)="cancel()">İptal</button>
+</div>

@@ -1,0 +1,13 @@
+.filmListTitle {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 25px;
+}
+
+.film-listesi {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-basis: 150px;
+}
+

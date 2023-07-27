@@ -1,0 +1,44 @@
+.film-ekle-form {
+  max-width: 300px; /* İstediğiniz boyuta göre ayarlayabilirsiniz */
+  max-height: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.film-ekle-baslik {
+  text-align:center;
+  font-size: 30px;
+  
+}
+
+.film-ekle-form label {
+  display: block;
+  margin-bottom: 3px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.film-ekle-form input,
+.film-ekle-form textarea {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.film-ekle-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 6px;
+  cursor: pointer;
+}
+
+.buton {
+  padding: 20px;
+  text-align: center;
+}
