@@ -1,0 +1,15 @@
+<app-film-duzenle [indexEdit]="index" [aktifEdit]="aktif" (setAktifEvent)="setAktif($event)" *ngIf="aktif"></app-film-duzenle>
+
+<div class="card" style="width: 18rem;" *ngFor="let film of films; let i = index">
+  <img class="card-img-top" [src]="film.posterURL">
+  <div class="card-body">
+    <h5 class="card-title">{{ film.filmAdi }}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Yönetmen: {{ film.yonetmen }}</li>
+    <li class="list-group-item">Gösterim Yılı:{{ film.gosterimYili }}</li>
+    <li class="list-group-item">Tür: {{ film.tur }}</li>
+    <button (click)="deleteFilm(i)" type="button" class="btn btn-danger">Sil</button>
+    <button (click)="editFilm(i)" type="button" class="btn btn-primary">Düzenle</button>
+  </ul>
+</div>

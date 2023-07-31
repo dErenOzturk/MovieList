@@ -1,0 +1,27 @@
+.film-duzenle-form {
+  max-width: 300px; /* İstediğiniz boyuta göre ayarlayabilirsiniz */
+  max-height: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.film-duzenle-baslik {
+  text-align: center;
+  font-size: 30px;
+}
+
+.film-duzenle-form label {
+  display: block;
+  margin-bottom: 3px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.film-duzenle-form input,
+.film-duzenle-form textarea {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
